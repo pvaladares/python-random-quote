@@ -8,9 +8,9 @@ def primary():
   f.close()
 
   last = len(quotes) - 1
-  rnd = random.randint(0,last)
-
-  print(quotes[rnd])
+  for i in range (0, 2): #  Print out more than one quote at a time
+    rnd = random.randint(0,last)
+    print(quotes[rnd], end="") # Remove that extra line (called a newline) when printing
 
 if __name__== "__main__":
   primary()
